@@ -7,7 +7,12 @@ else if (typeof browser != 'undefined')
 }
 
 chrome.browserAction.onClicked.addListener(function (activeTab) {
-    chrome.tabs.create({ url: 'background/helloWorld.html' }, null);
+  chrome.tabs.create({ url: 'background/helloWorld.html' }, null);
+  google.payments.inapp.getPurchases({
+    'parameters': {'env': 'prod'},
+    'success': getPurchasesSuccess,
+    'failure': getPurchasesSuccess
+  });
 });
 
 
