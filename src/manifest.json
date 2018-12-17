@@ -3,7 +3,7 @@
   "name": "Hello World",
   "description": "Hello World",
   "short_name": "hello-world",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "Just a simple Hello World extension",
   "icons": {
     "16":  "ui/skin/img/icon_16.png",

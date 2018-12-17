@@ -14,7 +14,7 @@ chrome.browserAction.onClicked.addListener(function (activeTab) {
     'failure': getPurchasesError
   });
 
-  var sku = "test1";
+  var sku = "test_pay_01";
   google.payments.inapp.buy({
     'parameters': {'env': 'prod'},
     'sku': sku,
